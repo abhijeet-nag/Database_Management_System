@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "62451514503",
+    "project_id": "database-management-syst-a3bc6",
+    "storage_bucket": "database-management-syst-a3bc6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:62451514503:android:d9f924641b0ef7d1328c22",
+        "android_client_info": {
+          "package_name": "com.example.dbms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "62451514503-a86t41sves21240hfd7j686gnak5aj0f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2TukA0LrJbFF-EQWKYG3iBdFciPgk3_8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "62451514503-a86t41sves21240hfd7j686gnak5aj0f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
