@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<title>Login Page</title>
+		<link rel="stylesheet" href="static/style11.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+		<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-storage.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-analytics.js"></script>
+		<script src="/static/function.js"></script>
+		
+	</head>
+	<body>
+
+		<!--form area start-->
+		<div class="form">
+			<!--login form start-->
+			<form class="login-form" action="/api/login" method="post" enctype="application/x-www-form-urlencoded">
+				<i class="fas fa-user-circle"></i>
+				<input class="user-input" type="email" name="email" placeholder="Email Address" id="email" required>
+				<input class="user-input" type="password" name="password" placeholder="Password" id="password" required>
+				<div class="options-01">
+					<label class="remember-me"><input type="checkbox" name="">Remember me</label>
+					<a href="#">Forgot your password?</a>
+				</div>
+				<input class="btn" type="submit" name="" value="LOGIN">
+				<div class="options-02">
+					<p>Not Registered? <a href="/signup">Create an Account</a></p>
+				</div>
+			</form>
+		</div>	
+			<!--login form end-->	
+		<!--form area end-->
+
+		<script>
+			
+			function signin(){
+			var email = document.getElementById('email');
+			var password = document.getElementById('password');
+			window.alert('run');
+
+			firebase.auth().createUserWithEmailAndPassword(email, password)
+			.then((userCredential) => {
+			// Signed in 
+			var user = userCredential.user;
+			window.alert('Login Successful');
+			// ...
+			})
+			.catch((error) => {
+			var errorCode = error.code;
+			var errorMessage = error.message;
+			window.alert(errorMessage);
+			// ..
+			});
+
+			}
+
+		</script>
+	</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<title>Login Page</title>
+		<link rel="stylesheet" href="static/style11.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+		<script src="/static/function.js"></script>
+		
+	</head>
+	<body>
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form action="/api/doctor" method="post" enctype="application/json">
+                <div class="data">
+                    <label for="input_text">Name</label>
+                    <input id="input_text" type="text" placeholder="Name of the Doctor's" name="name">
+                </div>
+                <div class="data">
+                    <label for="input_hospital">Hospital/Clinic</label>
+                    <input id="input_hospital" type="text" placeholder="Hospital/Clinic" name="hospital">
+                </div>
+                
+                <div class="data">
+                    <label for="input_time">Time</label>
+                    <input id="input_time" type="time"placeholder="Time" name="time">
+                </div>
+                <div class="data">
+                    <label for="input_day">Day</label>
+                    <input id="input_day" type="day" placeholder="Day" name="day">
+                </div>
+                <div class="data">
+                    <label for="input_text">Name</label>
+                    <input id="input_text" type="text" placeholder="Status" name="status">
+                </div>
+                <input class="btn" type="submit" name="" value="ADD">
+            </form>
+        </div>
+    </body>
+</html>
