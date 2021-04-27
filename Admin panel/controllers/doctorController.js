@@ -14,7 +14,7 @@ const addDoctor = async (req, res, next) => {
         const hospitalName = req.body.hospital;
         delete data['name'];
         delete data['hospital'];
-        await firestore.collection('doctor').doc(hospitalName).collection('Name').doc(doctorName).set(data);
+        await firestore.collection('Details').doc(hospitalName).collection('Name').doc(doctorName).set(data);
         res.send('Record Svae Successful');
     }
     catch (error) {
