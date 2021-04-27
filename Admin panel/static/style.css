@@ -31,7 +31,7 @@
 
 .light .logo-dark, .light .light-icon {
 	display: none;
-	
+
 }
 
 .dark .logo-light, .dark .dark-icon {
@@ -139,7 +139,7 @@ body {
 }
 
 .logo {
-	
+
     height: 76px;
     padding-left: 6px;
 	border-radius: 50%;
@@ -149,10 +149,10 @@ body {
 .avt {
 	padding: 12px;
 	margin-right: 11px;
-	
+
 }
 .logout-btn{
-  background-color: #008CBA; 
+  background-color: #008CBA;
   border: none;
   color: white;
   padding: 10px 15px;
@@ -166,7 +166,7 @@ body {
 
 }
 .logout-btn:hover{
-	background-color: #4CAF50; 
+	background-color: #4CAF50;
     color: white;
 
 }
@@ -440,18 +440,18 @@ table th {
 }
 .container form{
 	margin-top: -30px;
-	
+
 }
 .container form .data{
 
 	height: 45px;
 	width: 100%;
 	margin: 40px 0;
-	
+
 }
 form .data label{
 	font-size: 18px;
-	
+
 }
 form .data input{
 	height: 100%;
@@ -469,8 +469,8 @@ form .btn{
 	width: 360px;
 	position: absolute;
 	overflow: hidden;
-	
-	
+
+
 
 }
 form .btn .inner{
@@ -481,7 +481,7 @@ form .btn .inner{
 	z-index: -1;
 	transition:all 0.4s;
 	background:green;
-	
+
 
 }
 form .btn:hover .inner{
@@ -501,23 +501,25 @@ form .btn button{
 	letter-spacing: 1px;
 	cursor: pointer;
 
-} 
+}
 form .btn:hover button{
 	color: maroon;
 }
 
-#myBtn{
-	background-color: #746b6b; 
-	border: none;
-	border-radius: 10px;
-	margin-right: 80px;
-	color: white;
-	padding: 11px 15px;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 12px;
-	cursor: pointer;
-	margin-left: 95%;
+#myBtn {
+    background-color: #746b6b;
+    border: none;
+    border-radius: 15px;
+
+    color: white;
+    padding: 25px 50px;
+    text-decoration: none;
+
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 50%;
+    margin-top: 15%;
+    margin-bottom: 10%;
 }
 
 /* The Modal (background) */
@@ -534,7 +536,7 @@ form .btn:hover button{
   overflow: auto; /* Enable scroll if needed */
   /*background-color: rgb(0,0,0); /* Fallback color */
   background-color: #b0daf7;
-  
+
 }
 
 /* Modal Content */
